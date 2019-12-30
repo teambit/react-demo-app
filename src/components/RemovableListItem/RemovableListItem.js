@@ -43,11 +43,8 @@ const DelButton = styled.button`
     }
 `
 
-const RemovableListItem = (props) => {
-    const id = props.id;
-    const text = props.text;
-    const removeItem = props.removeItem;
-
+const RemovableListItem = (props) => { 
+    const {id, text, removeItem}  = props;
     return(
         <Item>
            <Text>{text}</Text>
@@ -63,7 +60,5 @@ RemovableListItem.propTypes = {
     text: PropTypes.string.isRequired,
     removeItem: PropTypes.func
 }
-
-
 
 export default RemovableListItem;

@@ -4,16 +4,14 @@ import PropTypes from 'prop-types';
 
 
 const List = (props) => {
-    const items = props.items;
-    const removeItem = props.removeItem;
-
-    return (
-        <ul style={{paddingLeft: 0}}>
-            {items.map(item =>  
-                <RemovableListItem key={item.key} text={item.text} id={item.key} removeItem={removeItem}/>   
-            )}
-        </ul>
-    )
+  const {items, removeItem} = props;
+  return (
+      <ul style={{paddingLeft: 0}}>
+          {items.map(item =>  
+              <RemovableListItem key={item.key} text={item.text} id={item.key} removeItem={removeItem}/>   
+          )}
+      </ul>
+  )
 }
 
 List.propTypes = {
