@@ -23,6 +23,7 @@ const Button = styled.button`
 `
 
 Button.propTypes = {
+    /** Determines if a button is active or disabled */
     disabled: PropTypes.bool
 }
 

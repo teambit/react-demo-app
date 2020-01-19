@@ -38,10 +38,11 @@ const DelButton = styled.button`
     outline: unset;
     transition: transform .8s;
     &:hover{
-        color: #c75656
+        color: #c75656;
         transform: rotate(180deg);
     }
 `
+
 
 const RemovableListItem = (props) => { 
     const {id, text, removeItem}  = props;
@@ -56,8 +57,17 @@ const RemovableListItem = (props) => {
 }
 
 RemovableListItem.propTypes = {
+    /**
+     * The items's ID
+     */
     id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    /**
+     * The item's text
+     */
     text: PropTypes.string.isRequired,
+    /**
+     * A callback to be exectuted on a remove-item event
+     */
     removeItem: PropTypes.func
 }
 

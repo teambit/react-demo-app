@@ -15,12 +15,16 @@ const List = (props) => {
 }
 
 List.propTypes = {
+  /** A list item
+   *  key: The item's key
+   *  text: The Item's text */ 
     items: PropTypes.arrayOf(
       PropTypes.shape({
         key: PropTypes.string.isRequired,
         text: PropTypes.string.isRequired,
       })
     ),
+    /** A collback to be executed on a remove-item event */
     removeItem: PropTypes.func
   };
 
