@@ -15,9 +15,9 @@ const List = (props) => {
 }
 
 List.propTypes = {
-  /** A list item
-   *  key: The item's key
-   *  text: The Item's text */ 
+  /** A list item.
+   *  key: The item's unique key.
+   *  text: The item's description. */ 
     items: PropTypes.arrayOf(
       PropTypes.shape({
         key: PropTypes.string.isRequired,
