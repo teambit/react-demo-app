@@ -15,7 +15,7 @@ const List = (props) => {
 }
 
 List.propTypes = {
-  /** A list item.
+  /** List items.
    *  key: The item's unique key.
    *  text: The item's description. */ 
     items: PropTypes.arrayOf(
