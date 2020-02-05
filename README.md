@@ -1,4 +1,3 @@
-# React Demo App
 <p align="center"> 
   <img src="https://miro.medium.com/max/466/1*EtPfLHLUwOgXfmAcM9v1ag.png">
 </p>
